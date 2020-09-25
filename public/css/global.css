@@ -1,51 +1,10 @@
-:root {
-  font-size: 10px;
-}
-
-* {
-  font-family: "Poppins", sans-serif;
-}
-
-html,
-body {
-  margin: 0;
-}
-
-.content-wrap {
-  width: 1000px;
-  margin: 0 auto;
-}
-
-.content-wrap .content {
-  padding: 40px 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin: 0;
-}
-
-h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-h2 {
-  font-size: 3.5rem;
-  font-weight: bold;
-  margin-bottom: 3rem;
-}
-
 .item-container {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 2rem 3rem;
-  border-radius: 20px;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 .item-container .header {
@@ -124,6 +83,47 @@ h2 {
   background: rgba(67, 98, 240, 0.3);
 }
 
+:root {
+  font-size: 10px;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+.content-wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.content-wrap .content {
+  padding: 40px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -160,5 +160,64 @@ header ul li a {
 
 header ul li a:hover {
   color: #333;
+}
+
+footer {
+  background: #111;
+  color: #fff;
+  padding: 4rem 0;
+}
+
+footer div {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+footer div section {
+  width: 400px;
+}
+
+footer div section.brand h1 {
+  width: 100%;
+  letter-spacing: 0.4px;
+  margin-bottom: 0.4rem;
+}
+
+footer div section.brand span {
+  font-size: 1.4rem;
+}
+
+footer div section.links {
+  font-size: 1.4rem;
+}
+
+footer div section.links h4 {
+  margin-bottom: 1rem;
+}
+
+footer div section.links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer div section.links ul li {
+  padding: 0 10px;
+}
+
+footer div section.links ul li a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #ccc;
+  cursor: pointer;
+}
+
+footer div section.links ul li a:hover {
+  color: #999;
 }
 
