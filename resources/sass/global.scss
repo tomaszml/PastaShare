@@ -1,0 +1,161 @@
+@mixin flex-inline-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@mixin user-bold {
+    .user{
+        @include flex-inline-center;
+        cursor: pointer;
+
+        img{
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+        h5{
+            font-size: 1.6rem;
+            margin-left: 1rem;
+            font-weight: 500;
+        }
+    }
+}
+
+@mixin tag{
+    div{
+        padding: 1rem 2rem;
+        width: fit-content;
+        border-radius: 9px;
+        background: rgb(67 98 240 / 0.2);
+        color: rgb(67 98 240);
+        font-weight: bold;
+        margin: 1rem;
+        cursor: pointer;
+
+        &:hover{
+            background: rgb(67 98 240 / 0.3);
+        }
+    }
+}
+
+@mixin tag-shortlist{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 440px;
+    flex-wrap: wrap;
+
+    @include tag;
+}
+
+:root{
+    font-size: 10px;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+html,body{
+    margin: 0;
+}
+
+.content-wrap{
+    width: 1000px;
+    margin: 0 auto;
+
+    .content{
+        padding: 40px 0;
+    }
+}
+
+h1,h2,h3,h4,h5{ margin: 0; }
+
+h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.item-container{
+    width: fit-content;
+    padding: 2rem 3rem;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px rgb(0 0 0 / 0.1);
+
+    .header{
+        @include flex-inline-center;
+        justify-content: space-between;
+        
+        @include user-bold;
+        span{
+            font-size: 1.2rem;
+            color: #888;
+        }
+    }
+
+    h5{
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin: 1.5rem;
+        cursor: pointer;
+    }
+
+    .text{
+        padding: 1rem 2rem;
+        background: #eee;
+        border-radius: 8px;
+        max-width: 400px;
+        font-size: 1.2rem;
+        color: #666;
+        cursor: pointer;
+    }
+
+    .tags{
+        @include tag-shortlist;
+    }
+}
+
+header{
+    @include flex-inline-center;
+
+    justify-content: space-between;
+    padding: 10px 40px;
+    background: #eee;
+
+    h1{
+        color: #254af2;
+        letter-spacing: 0.4px;
+    }
+
+    ul{
+        @include flex-inline-center;
+
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li{
+            padding: 0 10px;
+
+            a{
+                font-size: 1.4rem;
+                text-decoration: none;
+                color: #666;
+                cursor: pointer;
+
+                &:hover{
+                    color: #333;
+                }
+            }
+        }
+    }
+}

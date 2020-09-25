@@ -1,0 +1,164 @@
+:root {
+  font-size: 10px;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+.content-wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.content-wrap .content {
+  padding: 40px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.item-container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item-container .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-container .header .user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.item-container .header .user img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
+}
+
+.item-container .header .user h5 {
+  font-size: 1.6rem;
+  margin-left: 1rem;
+  font-weight: 500;
+}
+
+.item-container .header span {
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.item-container h5 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 1.5rem;
+  cursor: pointer;
+}
+
+.item-container .text {
+  padding: 1rem 2rem;
+  background: #eee;
+  border-radius: 8px;
+  max-width: 400px;
+  font-size: 1.2rem;
+  color: #666;
+  cursor: pointer;
+}
+
+.item-container .tags {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 440px;
+  flex-wrap: wrap;
+}
+
+.item-container .tags div {
+  padding: 1rem 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 9px;
+  background: rgba(67, 98, 240, 0.2);
+  color: #4362f0;
+  font-weight: bold;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.item-container .tags div:hover {
+  background: rgba(67, 98, 240, 0.3);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  background: #eee;
+}
+
+header h1 {
+  color: #254af2;
+  letter-spacing: 0.4px;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header ul li {
+  padding: 0 10px;
+}
+
+header ul li a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #666;
+  cursor: pointer;
+}
+
+header ul li a:hover {
+  color: #333;
+}
+
