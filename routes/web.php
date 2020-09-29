@@ -24,3 +24,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 route::get('guest', function(){
     return view('guest');
 });
+
+route::get('create', function(){
+    return view('create');
+});

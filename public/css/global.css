@@ -124,6 +124,68 @@ h2 {
   margin-bottom: 3rem;
 }
 
+.input-group {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+
+.input-group h5 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.input-group input {
+  font-size: 1.4rem;
+  border: none;
+  background: #eee;
+  border-radius: 6px;
+  outline: none;
+  padding: 0.6rem 1.4rem;
+  width: 340px;
+}
+
+.input-group input:focus {
+  box-shadow: 0 0 0 2px #d3dbff;
+}
+
+.input-group textarea {
+  font-size: 1.4rem;
+  border: none;
+  background: #eee;
+  border-radius: 6px;
+  outline: none;
+  padding: 0.6rem 1.4rem;
+  width: 340px;
+  width: 560px;
+  height: 100px;
+  resize: none;
+}
+
+.input-group textarea:focus {
+  box-shadow: 0 0 0 2px #d3dbff;
+}
+
+.input-group select {
+  width: 200px;
+}
+
+button {
+  background: #254af2;
+  border: none;
+  padding: 1rem 2rem;
+  color: #fff;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1637ce;
+}
+
 header {
   display: flex;
   flex-direction: row;

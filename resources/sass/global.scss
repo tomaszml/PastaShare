@@ -51,6 +51,19 @@
     @include tag;
 }
 
+@mixin input-default{
+    font-size: 1.4rem;
+    border: none;
+    background: #eee;
+    border-radius: 6px;
+    outline: none;
+    padding: 0.6rem 1.4rem;
+    width: 340px;
+    &:focus{
+        box-shadow: 0 0 0 2px #d3dbff;
+    }
+}
+
 @import 'posts/item', 'posts/sort';
 
 :root{
@@ -85,6 +98,45 @@ h2{
     font-size: 3.5rem;
     font-weight: bold;
     margin-bottom: 3rem;
+}
+
+.input-group{
+    width: fit-content;
+    margin-bottom: 2rem;
+
+    h5{
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-bottom: 4px;
+    }
+
+    input{
+        @include input-default;
+    }
+
+    textarea{
+        @include input-default;
+        width: 560px;
+        height: 100px;
+        resize: none;
+    }
+
+    select{
+        width: 200px;
+    }
+}
+
+button{
+    background: #254af2;
+    border: none;
+    padding: 1rem 2rem;
+    color: #fff;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    &:hover{
+        background: #1637ce;
+    }
 }
 
 header{
